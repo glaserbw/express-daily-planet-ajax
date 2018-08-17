@@ -1,0 +1,18 @@
+<h1>Edit Articles</h1>
+
+<form id="edit-form" action="/articles/<% article.index%>" method="POST" role="form">
+  <div class="form-group">
+    <label for="title" class="hidden">Title</label>
+
+    <input type="text" value="<%=article.title%>" class="form-control" id="title"  name="title">
+  </div>
+
+  <div class="form-group">
+    <label for="body" class="hidden">Body</label>
+    <textarea type="text" class="form-control" id="body" value="<%=article.body%>" name="body"><%-article.body%></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
